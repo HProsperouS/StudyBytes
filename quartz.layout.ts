@@ -49,3 +49,18 @@ export const defaultListPageLayout: PageLayout = {
   ],
   right: [],
 }
+
+Component.Explorer({
+  sortFn: (a, b) => {
+    const aIsFile = a.file ? 1 : 0;
+    const bIsFile = b.file ? 1 : 0;
+
+    // If both a and b are files or both are not files, sort by displayName
+    if (aIsFile === bIsFile) {
+      return (a.displayName || '').localeCompare(b.displayName || '');
+    }
+
+    // If a is a file and b is not a file, a comes before b
+    return aIsFile - bIsFile;
+  },
+});
