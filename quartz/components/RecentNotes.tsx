@@ -18,6 +18,7 @@ interface Options {
 }
 
 const defaultOptions = (cfg: GlobalConfiguration): Options => ({
+  title: "Recent Updates",
   limit: 3,
   linkToMore: false,
   showTags: true,
