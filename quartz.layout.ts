@@ -18,20 +18,22 @@ export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.Breadcrumbs(),
     Component.ArticleTitle(),
-    Component.ContentMeta(),
+    Component.ContentMeta({showReadingTime:true}),
     Component.TagList(),
   ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
+    Component.MobileOnly(Component.Darkmode()),
     Component.Search(),
-    Component.Darkmode(),
+    Component.DesktopOnly(Component.RecentNotes()),
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
-    Component.Graph(),
+    Component.DesktopOnly(Component.Darkmode()),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.Graph(),
   ],
 }
 
