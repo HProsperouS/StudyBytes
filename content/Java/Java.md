@@ -34,7 +34,7 @@ description: Java Intro Page
   - Hadoop, Spark, Flink (big data platforms)
 
 ## Why Learn Java?
-
+---
 - **Well-designed language**: Java's syntax is crucial for understanding programming languages and helps in quickly learning other languages.
 
 - **Object-oriented programming (OOP)**: Java enhances abstract thinking skills and plays a vital role in building complex systems.
@@ -44,7 +44,7 @@ description: Java Intro Page
 - **Robust development tools**: Tools like Eclipse and IntelliJ IDEA simplify the development process and enhance the development experience with features like intelligent code completion and syntax error detection.
 
 ## Java Versions and JDK
-
+---
 Java has a rich set of libraries and APIs, and SUN has divided Java into three different versions: Java SE (Standard Edition), Java EE (Enterprise Edition), and Java ME (Micro Edition). Their relationship is illustrated in the following diagram:
 <img src="https://i0.wp.com/turingplanet.org/wp-content/uploads/2019/12/Screen-Shot-2019-12-10-at-9.59.27-AM.png?resize=300%2C187&ssl=1" alt="Java Editions" width="200" height="150">
 
