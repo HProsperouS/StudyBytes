@@ -1,10 +1,21 @@
+---
+Author:
+  - Liu JiaJun
+Author Profile:
+  - https://www.linkedin.com/in/jiajun-liu-775252244/
+tags: 
+  - roadmap
+Creation Date: 
+Last Date: 
+References: 
+description: Study Path -> Java Road Map
+---
+
 # Java 学习路线 by 程序员鱼皮
 
 > 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
-
-
 
 ## 符号表
 
