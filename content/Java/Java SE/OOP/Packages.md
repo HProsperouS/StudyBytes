@@ -125,3 +125,13 @@ com
         ├── analytics
         └── reporting
 ```
+
+## Common Packages Used in Java
+- `java.lang.*`: 
+  - The `lang` package is a fundamental package that is imported by default. It provides classes that are essential to the Java programming language, such as `String`, `Math`, `Integer`, `System`, and `Thread`.
+- `java.lang.*`:
+  - The `util` package contains utility classes that provide various functionalities, including collection frameworks, date and time facilities, event model, and miscellaneous utility classes like `Scanner`.
+- `java.net.*`: 
+  - The `net` package provides the classes for implementing networking applications. It includes classes for working with URLs, sockets, and network interfaces.
+- `java.awt.*`: 
+  - The `awt` (Abstract Window Toolkit) package is used for developing graphical user interfaces (GUIs) in Java. It provides classes for windowing, graphics, and user-interface widgets like buttons, text fields, and more.
