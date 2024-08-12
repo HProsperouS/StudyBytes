@@ -25,6 +25,7 @@ tags:
    - **Algorithm**: This is a Greedy Algorithm, where the best choice is made at each step to reach an optimal solution.
 
 ## Definition of an algorithm
+---
 - **Algorithm:** A set of instructions to solve a specific problem within a finite amount of time
   - **Characteristics:**
     1. **Clearly Defined:** Input and output are unambiguous.
@@ -32,6 +33,7 @@ tags:
     3. **Definitive Steps:** Each step has a clear meaning, and the output is consistent under the same conditions.
 
 ## Definition of a data structure
+---
 - **Data Structure:** A method of organizing and storing data in a computer.
   - Design Goals:
     1. **Minimize Space:** Reduce memory usage.
@@ -43,6 +45,7 @@ tags:
         - **Graphs vs. Linked Lists:** Richer logical information but higher memory usage.
 
 ## Relationship between Data Structures and Algorithms
+---
 Data structures and algorithms are closely related and integrated, particularly in the following aspects:
 
 1. **Foundation of Algorithms**: Data structures provide the necessary storage and methods for manipulating data in algorithms.
