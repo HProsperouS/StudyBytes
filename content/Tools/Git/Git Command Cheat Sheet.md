@@ -13,149 +13,61 @@ description: Tools -> Git -> Command Cheat Sheet
 
 ## Basic Commands
 
-### Initialize a new Git repository
-```sh
-git init
-```
+### Getting & Creating Projects
 
-### Clone an existing repository
-```sh
-git clone <repository-url>
-```
+| Command | Description |
+| ------- | ----------- |
+| `git init` | Initialize a local Git repository |
+| `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 
-### Check the status of your repository
-```sh
-git status
-```
+### Basic Snapshotting
 
-### Add files to the staging area
-```sh
-git add <file>
-```
+| Command | Description |
+| ------- | ----------- |
+| `git status` | Check status |
+| `git add [file-name.txt]` | Add a file to the staging area |
+| `git add -A` | Add all new and changed files to the staging area |
+| `git commit -m "[commit message]"` | Commit changes |
+| `git rm -r [file-name.txt]` | Remove a file (or folder) |
 
-### Commit changes
-```sh
-git commit -m "commit message"
-```
+### Branching & Merging
 
-### Push changes to a remote repository
-```sh
-git push
-```
+| Command | Description |
+| ------- | ----------- |
+| `git branch` | List branches (the asterisk denotes the current branch) |
+| `git branch -a` | List all branches (local and remote) |
+| `git branch [branch name]` | Create a new branch |
+| `git branch -d [branch name]` | Delete a branch |
+| `git push origin --delete [branch name]` | Delete a remote branch |
+| `git checkout -b [branch name]` | Create a new branch and switch to it |
+| `git checkout -b [branch name] origin/[branch name]` | Clone a remote branch and switch to it |
+| `git branch -m [old branch name] [new branch name]` | Rename a local branch |
+| `git checkout [branch name]` | Switch to a branch |
+| `git checkout -` | Switch to the branch last checked out |
+| `git checkout -- [file-name.txt]` | Discard changes to a file |
+| `git merge [branch name]` | Merge a branch into the active branch |
+| `git merge [source branch] [target branch]` | Merge a branch into a target branch |
+| `git stash` | Stash changes in a dirty working directory |
+| `git stash clear` | Remove all stashed entries |
 
-### Pull changes from a remote repository
-```sh
-git pull
-```
+### Sharing & Updating Projects
 
-## Branching
+| Command | Description |
+| ------- | ----------- |
+| `git push origin [branch name]` | Push a branch to your remote repository |
+| `git push -u origin [branch name]` | Push changes to remote repository (and remember the branch) |
+| `git push` | Push changes to remote repository (remembered branch) |
+| `git push origin --delete [branch name]` | Delete a remote branch |
+| `git pull` | Update local repository to the newest commit |
+| `git pull origin [branch name]` | Pull changes from remote repository |
+| `git remote add origin ssh://git@github.com/[username]/[repository-name].git` | Add a remote repository |
+| `git remote set-url origin ssh://git@github.com/[username]/[repository-name].git` | Set a repository's origin branch to SSH |
 
-### List all branches
-```sh
-git branch
-```
+### Inspection & Comparison
 
-### Create a new branch
-```sh
-git branch <branch-name>
-```
-
-### Switch to a different branch
-```sh
-git checkout <branch-name>
-```
-
-### Create and switch to a new branch
-```sh
-git checkout -b <branch-name>
-```
-
-### Merge a branch into the current branch
-```sh
-git merge <branch-name>
-```
-
-## Remote Repositories
-
-### Add a remote repository
-```sh
-git remote add <remote-name> <repository-url>
-```
-
-### Remove a remote repository
-```sh
-git remote remove <remote-name>
-```
-
-### Show remote repositories
-```sh
-git remote -v
-```
-
-## Stashing
-
-### Stash changes
-```sh
-git stash
-```
-
-### Apply stashed changes
-```sh
-git stash apply
-```
-
-### List stashed changes
-```sh
-git stash list
-```
-
-## Undoing Changes
-
-### Unstage a file
-```sh
-git reset <file>
-```
-
-### Revert a commit
-```sh
-git revert <commit-id>
-```
-
-### Reset to a previous commit
-```sh
-git reset --hard <commit-id>
-```
-
-## Viewing History
-
-### Show commit history
-```sh
-git log
-```
-
-### Show a specific commit
-```sh
-git show <commit-id>
-```
-
-### Show changes
-```sh
-git diff
-```
-
-## Tagging
-
-### Create a new tag
-```sh
-git tag <tag-name>
-```
-
-### List all tags
-```sh
-git tag
-```
-
-### Push tags to remote
-```sh
-git push --tags
-```
+| Command | Description |
+| ------- | ----------- |
+| `git log` | View changes |
+| `git log --summary` | View changes (detailed) |
+| `git log --oneline` | View changes (briefly) |
+| `git diff [source branch] [target branch]` | Preview changes before merging |
